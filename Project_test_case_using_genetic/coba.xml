@@ -1,0 +1,75 @@
+<root>
+<symbol id='1'>
+<objectmessage> "insert card"</objectmessage>
+<synchronization> 	"Simple"</synchronization>
+<sequence>   	"1"</sequence>
+<ordinal>    	0</ordinal>
+</symbol>
+<symbol id='2'>
+<objectmessage> "enter pin"</objectmessage>
+<synchronization> 	"Return"</synchronization>
+<sequence>   	"4"</sequence>
+<ordinal>    	3</ordinal>
+</symbol>
+<symbol id='3'>
+<objectmessage> "pin"</objectmessage>
+<synchronization> 	"Simple"</synchronization>
+<sequence>   	"5"</sequence>
+<ordinal>    	4</ordinal>
+</symbol>
+<symbol id='4'>
+<objectmessage> "enter amount"</objectmessage>
+<synchronization> 	"Return"</synchronization>
+<sequence>   	"8"</sequence>
+<ordinal>    	7</ordinal>
+</symbol>
+<symbol id='5'>
+<objectmessage> "amount"</objectmessage>
+<synchronization> 	"Simple"</synchronization>
+<sequence>   	"9"</sequence>
+<ordinal>    	8</ordinal>
+</symbol>
+<symbol id='6'>
+<objectmessage> "take cash"</objectmessage>
+<synchronization> 	"Return"</synchronization>
+<sequence>   	"12"</sequence>
+<ordinal>    	11</ordinal>
+</symbol>
+<symbol id='7'>
+<objectmessage> "validate (card)"</objectmessage>
+<synchronization> 	"Simple"</synchronization>
+<sequence>   	"2"</sequence>
+<ordinal>    	1</ordinal>
+</symbol>
+<symbol id='8'>
+<objectmessage> "return"</objectmessage>
+<synchronization> 	"Return"</synchronization>
+<sequence>   	"3"</sequence>
+<ordinal>    	2</ordinal>
+</symbol>
+<symbol id='9'>
+<objectmessage> "verify (pin)"</objectmessage>
+<synchronization> 	"Simple"</synchronization>
+<sequence>   	"6"</sequence>
+<ordinal>    	5</ordinal>
+</symbol>
+<symbol id='10'>
+<objectmessage> "return"</objectmessage>
+<synchronization> 	"Return"</synchronization>
+<sequence>   	"7"</sequence>
+<ordinal>    	6</ordinal>
+</symbol>
+<symbol id='11'>
+<objectmessage> "check (balance)"</objectmessage>
+<synchronization> 	"Simple"</synchronization>
+<sequence>   	"10"</sequence>
+<ordinal>    	9</ordinal>
+</symbol>
+<symbol id='12'>
+<objectmessage> "return"</objectmessage>
+<synchronization> 	"Return"</synchronization>
+<sequence>   	"11"</sequence>
+<ordinal>    	10</ordinal>
+</symbol>
+
+</root>
