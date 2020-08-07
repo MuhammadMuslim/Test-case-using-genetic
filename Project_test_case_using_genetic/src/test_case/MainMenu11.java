@@ -523,9 +523,11 @@ public class MainMenu11 extends javax.swing.JFrame {
 
         for (int i = 1; i < s.length; i++) {
             System.out.println("generation :" + s[i]);
+            TextAreaGeneratePath.setText("Hasil cross over : "+s[i]);
             st = s[i];
             String[] arrayTeksSplit = st.split("\t");
             System.out.println("Hasil cross over : "+s[i]);
+            TextAreaGeneratePath.setText("\n"+"Hasil cross over : "+s[i]);
             for (int j = 0; j < arrayTeksSplit.length; j++) {
                 String data1 = arrayTeksSplit[1];
                 String data2 = arrayTeksSplit[2];
@@ -542,6 +544,7 @@ public class MainMenu11 extends javax.swing.JFrame {
                                 String data1mod = data1aaa[c];
                                 System.out.println("kromosom terbaik="+data1mod);
                                 gen.addEdge(data1mod, data2bb);
+                                TextAreaGeneratePath.setText("Hasil cross over :"+s[i]+"\n"+"kromosom terbaik ="+data1aa+"\n");
                             }
                         } else {
                             gen.addEdge(data1aa, data2bb);
@@ -564,7 +567,12 @@ public class MainMenu11 extends javax.swing.JFrame {
 
         printPath(visited);
         gen.printnodegen();
-        
+                try{
+FileWriter fileWriter = new FileWriter(sampleFile);
+}
+catch(IOException ex){
+ex.printStackTrace();
+}
     }//GEN-LAST:event_BtGenPathActionPerformed
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
@@ -579,7 +587,7 @@ public class MainMenu11 extends javax.swing.JFrame {
          
         String fileSDT = jTextArea1.getText();
         String[] s = jTextArea1.getText().split("\n");
-        System.out.println("s" + s.length);
+        //System.out.println("s" + s.length);
         String END= String.valueOf(s.length);
         
         // examine adjacent nodes
@@ -609,12 +617,15 @@ public class MainMenu11 extends javax.swing.JFrame {
         for (String node : visited) {
             System.out.print(node);
             System.out.print(" ");
-            TextAreaGeneratePath.append(node + " ");
+            TextAreaGeneratePath.append(node+" ");
           //  jTextAreaPrintMap.append(grap.printMap);
         }
         TextAreaGeneratePath.append("\n");
         System.out.println();
     }
+File sampleFile = new File("sample.txt");
+
+String text = null;
 
     /**
      * @param args the command line arguments
@@ -656,6 +667,7 @@ public class MainMenu11 extends javax.swing.JFrame {
 
             }
         });
+
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtGenPath;
