@@ -544,7 +544,8 @@ public class MainMenu11 extends javax.swing.JFrame {
                                 String data1mod = data1aaa[c];
                                 System.out.println("kromosom terbaik="+data1mod);
                                 gen.addEdge(data1mod, data2bb);
-                                TextAreaGeneratePath.setText("Hasil cross over :"+s[i]+"\n"+"kromosom terbaik ="+data1aa+"\n");
+                                TextAreaGeneratePath.setText("Hasil cross over :"+s[i]+"\n"+"Kromosom Terbaik :"+data1aa+"\n"+"Track Node"
+                                        + " Populasi :"+"\n");
                             }
                         } else {
                             gen.addEdge(data1aa, data2bb);
